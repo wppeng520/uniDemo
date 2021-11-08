@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "icondemo"; /* Project id 2921511 */
+  src: 
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAUEAAsAAAAACcwAAAS3AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDdAqFWIR3ATYCJAMgCxIABCAFhGcHdxuWCMgOJQbLQAFg4GFMPNCPqe9DoMhuwKSBWTe5KSA7IQnUhGILLNuB2/QuR23acKRKXaiq0LDQNEKPkBrnYi9xf1X0Do6ZLkoHlrcGgC6qChvYRAfU+dU04Qf7F3zEN5Bdu5WfCXqOgHrTLBFXrckvB6OT+wQV2Mn+vQEvP5w8xlKgKxjlDGJQ1hSLbszCbSgQr4x7B9yyvj/8gRlBl6iQ/I9ZeziDhitfse8iXvlfIX0Do0eAyREFJEwaGL8jUbblKiQnMklSn5Sa7QZald+YGMK+4l8Nv+78Fvht8Lv4/3+kFcpQqQmTyAqSqDTVf14o+isbgT0YLTGEaVwyQziXAkOGClHVTnCJDAdyKTE8yCXwU1RZYHR5eivq8QWEkQS7KJ5EQVnQ3CqRtJomOzjaiU6PywlTZXnN8apnD64zmXcBcuUi0Tb/MlaoXuoy0TIVtVt1xNZ5e6BY2Zt0nf1YqbpPzaw6tWeDJaLXbDx72ppdvUk9JXqP/tWn+hXvoXJB/2rlpso1DltsHuvPu4RVq6rm2Q/wPTf1MnEt4YnluspjWNVv/3yfvVApf2yzukpOuSgapOq+5nWxUef/dE0R/J8uNYEXpxOf/oPzHj8uv6HJnmAQQYT6LZv0NVx7Rq789Kk4/wHEhmtnN26woHfM82RWbdq8n2hI1UdE2LYJX7oLxisK85IKl3UlR44aTpxeEVGfVp2PVhnkgQr7AYitQdjzWMlQhnkzJbo0efqV+GCTDlNK7jQJNmUHM/BqR+vcf0dH7P9lM8o7vbcz3PqvbeElbX/Xell88LIqNOpTZKQGhjq+cUqwLdxs37x203a1/acmON1xDEkNUmTYFBn1eD2wyD/v6XozLXF1pFPWZTNPr7yCOi9PM/tk56yI3amJL109bsGssN/S0rzTs9PcXAShfy2JnE2aaakrp6ZWalznn5biEAysZMq4+JQ7t9m1t9fqg27fSeHiM2VENUTIeD/w2JDsbuo2Zb+F9pOVvyt8nYOdK3z+rPzSZ7F/ipupOwwC1K4npTwB1K6ky/hy6wPiTzwVEP/FGYB0Iv75P0zOqRfULqc7RV6DIbDv0f/BJuNFvbpEBt8PpeBw1YZrl4tXrwDKIrzw9jLtzDIQI+0+Xsr5YnTSCLVhUfUqZcvgnBC9esVBjTra/WhS3VE4l6Csw4OoZACSshHIjJ0ABQ1mQFHZYqg30ertDTqchQu5DmNcJhC0ugtRsxeQtHqJzNiPUNBtGIpa/Yd6m0PTYQ3GBOlKHlECosmWblIm5VSMqhCsWTRScqWI1Sgo3i/BrErEq2WcigwJDA7Hs5AK8XUsUXewoYLAkAzPKcnMpm6GFAqObOe5NiQVAlsFoT02KIhJ+pJAKaeENDyEIkBopP26kY6R4qgwhlYI/mwaosQphbA0FCh8RltUVkJ4arKE/knTTTGtADJLqSrUdiCpF3RghTJEATPtMB5HibRmaCZEoUQ4pLPJ49ogUoJARyuE2sWaSrsdLqoM7F6t3M2ix7bj/yXlEEMKORRCMZRCOdQpHbzEdWkola61IATvPqPR3n9MkFEq7eM6qZXizNQuFSttzXB3a1R0jhVE1zGqh5K1IBUtAwAA') format('woff2'),
+       url('https://at.alicdn.com/t/font_2921511_mxmly8nfpcs.woff?t=1636339843672') format('woff'),
+       url('https://at.alicdn.com/t/font_2921511_mxmly8nfpcs.ttf?t=1636339843672') format('truetype');
+}
+
+.icondemo {
+  font-family: "icondemo" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.demo-duoxuan:before {
+  content: "\e7f9";
+}
+
+.demo-duoxuan1:before {
+  content: "\e6a5";
+}
+
+.demo-you:before {
+  content: "\e60d";
+}
+
+.demo-bitian:before {
+  content: "\e601";
+}
+
+.demo-jiahao:before {
+  content: "\e603";
+}
+
+.demo-shangchuanyunduan1:before {
+  content: "\e87b";
+}
+
+.demo-xiazaibendi:before {
+  content: "\e72e";
+}
