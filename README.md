@@ -64,7 +64,9 @@ Vue.prototype.$u = $u
 * 邮箱 ^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$
 * 手机号 ^1[0-9]{10,10}$
 
+6. 展示图
 
+![表单界面展示](README_files/2.png)
 
 
 

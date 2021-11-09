@@ -2,14 +2,21 @@
 import timestamp from '@/libs/function/timestamp.js';
 
 //防抖函数
-import debounce from '@/libs/function/debounce.js'
+import debounce from '@/libs/function/debounce.js';
+
+//函数节流
+import throttle from '@/libs/function/throttle.js';
 
 import toast from '@/libs/function/toast.js';
+
+import trim from '@/libs/function/trim.js';
 
 const $u = {
 	timestamp,
 	debounce,
-	toast
+	throttle,
+	toast,
+	trim
 }
 
 import { mapState } from 'vuex'
@@ -39,6 +46,12 @@ const mixin = {
 		...mapState($uStoreKey)
 	},
 	methods: {
+		//清空页面数据
+		$_clearPageData(){
+			//页面卸载时,需清空当前页面填写值，否则可能出现几个页面的值搅在一起
+			this.$u.vuex('vuex_pageData',{});
+			this.$u.vuex('vuex_pageDataRules',{});
+		},
 		$_test(){
 			console.log('测试混入')
 		}

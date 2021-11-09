@@ -15,7 +15,7 @@
 |`label`|标题|`String`|标题|-|
 |`type`|输入内容的类型|`String`|`text`|`text` / `number`|
 |`code`|表单字段 `id `，用于配合 `m-form-btn` 提交数据使用|`String`|`id`|-|
-|`value`|初始值|`String`, `Number`|-|-|
+|`value`|初始值，用于编辑页面绑定值|`String`, `Number`|-|-|
 |`placeholder`|`placeholder`显示值|`String`|请输入数据|-|
 |`required`|是否必填|`Boolean`|`false`|`false` / `true`|
 |`rule`|正则表达式，用于表单验证|`String`|-|-|

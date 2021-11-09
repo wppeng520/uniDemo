@@ -20,22 +20,27 @@
 		},
 		methods: {
 			tapBtn() {
-				let pageData=this.vuex_pageData;
-				let rules=this.vuex_pageDataRules;
+				let that = this;
 				
-				let isRules=true;
-				
-				for(let item in rules){
-					if(!rules[item]){
-						isRules=false;
-						break;
+				//节流，防止连点
+				this.$u.throttle(() => {
+					let pageData = this.vuex_pageData;
+					let rules = this.vuex_pageDataRules;
+
+					let isRules = true;
+
+					for (let item in rules) {
+						if (!rules[item]) {
+							isRules = false;
+							break;
+						}
 					}
-				}
-				
-				this.$emit('submit',{
-					isRules,
-					pageData
-				});
+
+					that.$emit('submit', {
+						isRules,
+						pageData
+					});
+				}, 1000)
 			}
 		}
 	}
@@ -57,9 +62,10 @@
 			align-items: center;
 			height: 55px;
 			width: 750rpx;
-			background-color: #409EFF;
-			color: #FFFFFF;
+			background-color: #F2F6FC;
+			color: #409EFF;
 			font-size: 32rpx;
+			font-weight: bold;
 
 			text {
 				letter-spacing: 10rpx
