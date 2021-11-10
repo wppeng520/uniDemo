@@ -6,12 +6,12 @@
 			<text v-if="required" class="icondemo demo-bitian required-icon"></text>
 		</view>
 		<view class="data">
-			<view class="btn">
+			<view class="btn" @click="tapSelect">
 				<text class="icondemo demo-jiahao btn-icon"></text>
 				<text>选择</text>
 			</view>
-			<view v-if="dataValue.name!=''" class="list-item">
-				<text>{{dataValue.name}}</text>
+			<view v-if="dataValue.text!=''" class="list-item">
+				<text>{{dataValue.text}}</text>
 			</view>
 		</view>
 	</view>
@@ -36,28 +36,50 @@
 				type: Boolean,
 				default: false
 			},
+			path: {
+				type: String,
+				default: ''
+			}
 		},
 		data() {
 			return {
 				dataValue: {
 					id: '',
-					name: ''
+					text: ''
 				}
 			}
 		},
-		onLoad() {
-			//console.log(this.vuex_systemInfo);
-		},
 		mounted() {
+
 			if (this.value != null) {
 				this.dataValue = this.value;
+				this.$u.vuex(`vuex_pageData.${this.code}`, this.value);
+				this.$u.vuex(`vuex_pageDataRules.${this.code}`, true);
+			} else {
+				if (this.required) {
+					this.$u.vuex(`vuex_pageData.${this.code}`, null);
+					this.$u.vuex(`vuex_pageDataRules.${this.code}`, false);
+				} else {
+					this.$u.vuex(`vuex_pageData.${this.code}`, null);
+					this.$u.vuex(`vuex_pageDataRules.${this.code}`, true);
+				}
 			}
-
 		},
 		watch: {
 			value(newVal, oldVal) {
+
 				if (newVal != null) {
 					this.dataValue = newVal;
+					this.$u.vuex(`vuex_pageData.${this.code}`, newVal);
+					this.$u.vuex(`vuex_pageDataRules.${this.code}`, true);
+				} else {
+					if (this.required) {
+						this.$u.vuex(`vuex_pageData.${this.code}`, null);
+						this.$u.vuex(`vuex_pageDataRules.${this.code}`, false);
+					} else {
+						this.$u.vuex(`vuex_pageData.${this.code}`, null);
+						this.$u.vuex(`vuex_pageDataRules.${this.code}`, true);
+					}
 				}
 
 			}
@@ -69,7 +91,11 @@
 
 		},
 		methods: {
-
+			tapSelect() {
+				uni.navigateTo({
+					url: `${this.path}?key=${this.code}`
+				})
+			}
 		}
 	}
 </script>
@@ -111,8 +137,8 @@
 				font-size: 26rpx;
 				padding: 6rpx 30rpx;
 				border-radius: 30rpx;
-				background-color: #F2F6FC;
-				color: #409EFF;
+				background-color: #409EFF;
+				color: #F2F6FC;
 				margin: 10rpx;
 			}
 		}

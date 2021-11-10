@@ -1,6 +1,6 @@
 <template>
 	<view class="page">
-		<view class="model">
+		<view class="model" @click="tapForm">
 			<text class="label">表单组件</text>
 			<text class="icondemo demo-you right-icon"></text>
 		</view>
@@ -15,30 +15,36 @@
 	export default {
 		data() {
 			return {
-				
+
 			}
 		},
 		onLoad() {
-			
+
 		},
 		methods: {
-
+			tapForm() {
+				uni.navigateTo({
+					url:'../form/index'
+				})
+			}
 		}
 	}
 </script>
 
 <style scoped>
-	.model{
+	.model {
 		padding: 30rpx 40rpx;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		border-bottom: 2px solid #EBEEF5;
 	}
-	.label{
+
+	.label {
 		font-size: 28rpx;
 	}
-	.right-icon{
+
+	.right-icon {
 		font-size: 32rpx;
 		color: #909399;
 	}
