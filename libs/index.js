@@ -11,12 +11,15 @@ import toast from '@/libs/function/toast.js';
 
 import trim from '@/libs/function/trim.js';
 
+import guid from '@/libs/function/guid.js'
+
 const $u = {
 	timestamp,
 	debounce,
 	throttle,
 	toast,
-	trim
+	trim,
+	guid
 }
 
 import { mapState } from 'vuex'

@@ -68,6 +68,8 @@ Vue.prototype.$u = $u
 
 ![表单界面展示](README_files/2.png)
 
+![图片上传展示](README_files/3.png)
+
 
 
 

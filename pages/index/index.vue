@@ -4,7 +4,7 @@
 			<text class="label">表单组件</text>
 			<text class="icondemo demo-you right-icon"></text>
 		</view>
-		<view class="model">
+		<view class="model" @click="tapUplad">
 			<text class="label">附件上传</text>
 			<text class="icondemo demo-you right-icon"></text>
 		</view>
@@ -25,6 +25,11 @@
 			tapForm() {
 				uni.navigateTo({
 					url:'../form/index'
+				})
+			},
+			tapUplad(){
+				uni.navigateTo({
+					url:'../file/index'
 				})
 			}
 		}
