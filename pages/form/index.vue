@@ -4,6 +4,9 @@
 			errTip="请输入正确的手机号" />
 		<m-form-input label="邮箱" code="Email" rule="^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$"
 			errTip="请输入正确的邮箱地址" />
+		<m-form-date label="开始日期" code="beginDate" required placeholder="请选择开始日期" value="2021年12月20日" />
+		<m-form-date label="结束日期" code="endDate" placeholder="请选择结束日期" value="" />
+		<m-form-time label="请假时间" code="leaveTime" placeholder="请选择请假时间" value="" />
 		<m-form-radio-page label="审核人(单选)" path="/pages/publicSelect/userListRadio" required code="auditor" :value="model.auditor" />
 		<m-form-checkbox-page label="抄送人(多选)" path="/pages/publicSelect/userListMulti" code="copyUser" :value="model.copyUser" />
 		<m-form-textarea label="备注(必填)" code="Remark0" required placeholder="请填写备注" />

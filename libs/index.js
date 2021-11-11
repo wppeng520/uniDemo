@@ -13,13 +13,16 @@ import trim from '@/libs/function/trim.js';
 
 import guid from '@/libs/function/guid.js'
 
+import timeformatting from '@/libs/function/timeformatting.js';
+
 const $u = {
 	timestamp,
 	debounce,
 	throttle,
 	toast,
 	trim,
-	guid
+	guid,
+	timeformatting
 }
 
 import { mapState } from 'vuex'
