@@ -1,7 +1,8 @@
 <!--  -->
 <template>
 	<view class="m-loadmore">
-		<text>{{showText}}</text>
+		<m-loading v-if="status=='loading'"></m-loading>
+		<text v-else>{{showText}}</text>
 	</view>
 </template>
 

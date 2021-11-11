@@ -8,6 +8,18 @@
 			<text class="label">附件上传</text>
 			<text class="icondemo demo-you right-icon"></text>
 		</view>
+		<view class="model" @click="tapList">
+			<text class="label">列表</text>
+			<text class="icondemo demo-you right-icon"></text>
+		</view>
+		<view class="model" @click="tapLoading">
+			<text class="label">加载中</text>
+			<text class="icondemo demo-you right-icon"></text>
+		</view>
+		<view class="model" @click="tapEmpty">
+			<text class="label">内容为空</text>
+			<text class="icondemo demo-you right-icon"></text>
+		</view>
 	</view>
 </template>
 
@@ -30,6 +42,21 @@
 			tapUplad(){
 				uni.navigateTo({
 					url:'../file/index'
+				})
+			},
+			tapLoading(){
+				uni.navigateTo({
+					url:'../loading/index'
+				})
+			},
+			tapEmpty(){
+				uni.navigateTo({
+					url:'../empty/index'
+				})
+			},
+			tapList(){
+				uni.navigateTo({
+					url:'../list/index'
 				})
 			}
 		}

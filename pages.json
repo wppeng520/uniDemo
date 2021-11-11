@@ -14,6 +14,24 @@
 			}
 		},
 		{
+			"path": "pages/list/index",
+			"style": {
+				"navigationBarTitleText": "列表"
+			}
+		},
+		{
+			"path": "pages/loading/index",
+			"style": {
+				"navigationBarTitleText": "加载中"
+			}
+		},
+		{
+			"path": "pages/empty/index",
+			"style": {
+				"navigationBarTitleText": "空数据"
+			}
+		},
+		{
 			"path": "pages/file/index",
 			"style": {
 				"navigationBarTitleText": "附件上传"
