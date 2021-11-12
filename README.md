@@ -70,7 +70,7 @@ Vue.prototype.$u = $u
 
 ![图片上传展示](README_files/3.png)
 
-
+![递归组件实现树结构展示](README_files/4.png)
 
 
 

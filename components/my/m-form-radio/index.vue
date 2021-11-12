@@ -31,7 +31,9 @@
 			}, //选择内容的索引
 			list: {
 				type: Array,
-				default: []
+				default: function() {
+					return [];
+				}
 			},
 			required: {
 				type: Boolean,

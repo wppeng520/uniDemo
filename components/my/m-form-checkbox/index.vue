@@ -26,11 +26,15 @@
 			},
 			value: {
 				type: Array,
-				default: []
+				default: function() {
+					return [];
+				}
 			}, //选择内容的id
 			list: {
 				type: Array,
-				default: []
+				default: function() {
+					return [];
+				}
 			}
 		},
 		data() {

@@ -12,6 +12,10 @@
 			<text class="label">列表</text>
 			<text class="icondemo demo-you right-icon"></text>
 		</view>
+		<view class="model" @click="tapTree">
+			<text class="label">树结构</text>
+			<text class="icondemo demo-you right-icon"></text>
+		</view>
 		<view class="model" @click="tapLoading">
 			<text class="label">加载中</text>
 			<text class="icondemo demo-you right-icon"></text>
@@ -57,6 +61,11 @@
 			tapList(){
 				uni.navigateTo({
 					url:'../list/index'
+				})
+			},
+			tapTree(){
+				uni.navigateTo({
+					url:'../tree/index'
 				})
 			}
 		}

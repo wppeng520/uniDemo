@@ -14,6 +14,12 @@
 			}
 		},
 		{
+			"path": "pages/tree/index",
+			"style": {
+				"navigationBarTitleText": "树"
+			}
+		},
+		{
 			"path": "pages/list/index",
 			"style": {
 				"navigationBarTitleText": "列表"

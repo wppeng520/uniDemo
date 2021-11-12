@@ -30,7 +30,9 @@
 			},
 			value: {
 				type: Object,
-				default: null
+				default: function() {
+					return null;
+				}
 			},
 			required: {
 				type: Boolean,
