@@ -1,10 +1,24 @@
 <!--  -->
 <template>
-	<view class="m-card">
+	<view class="m-card" @longpress="taplong">
 		<slot></slot>
 	</view>
 </template>
 
+<script>
+	export default {
+		props: {
+			
+		},
+		methods: {
+			taplong(e) {
+				let that = this;
+				
+				that.$emit('taplong',e);
+			}
+		}
+	}
+</script>
 
 <style lang="scss" scoped>
 	.m-card{

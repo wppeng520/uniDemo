@@ -24,6 +24,14 @@
 			<text class="label">内容为空</text>
 			<text class="icondemo demo-you right-icon"></text>
 		</view>
+		<view class="model" @click="tapTimeline">
+			<text class="label">时间线</text>
+			<text class="icondemo demo-you right-icon"></text>
+		</view>
+		<view class="model" @click="tapCarousel">
+			<text class="label">轮播图</text>
+			<text class="icondemo demo-you right-icon"></text>
+		</view>
 	</view>
 </template>
 
@@ -66,6 +74,16 @@
 			tapTree(){
 				uni.navigateTo({
 					url:'../tree/index'
+				})
+			},
+			tapTimeline(){
+				uni.navigateTo({
+					url:'../timeLine/index'
+				})
+			},
+			tapCarousel(){
+				uni.navigateTo({
+					url:'../carousel/index'
 				})
 			}
 		}

@@ -72,6 +72,8 @@ Vue.prototype.$u = $u
 
 ![递归组件实现树结构展示](README_files/4.png)
 
+![时间线展示](README_files/5.png)
+
 
 
 
