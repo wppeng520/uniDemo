@@ -2,9 +2,11 @@
 <template>
 	<view class='my-page'>
 		<m-search-text placeholder="请输入姓名" @search="tapSearch"></m-search-text>
-		<m-card>
+		<m-card v-for="(item,index) in 10" :key="index">
 			<view class="user">
-				<image src="/static/test/1.jpg" mode="aspectFill"></image>
+				<m-badge :value="10">
+					<image src="/static/test/1.jpg" mode="aspectFill"></image>
+				</m-badge>
 				<text>李美美</text>
 			</view>
 			<view class="speak">
@@ -15,19 +17,7 @@
 				</view>
 			</view>
 		</m-card>
-		<m-card>
-			<view class="user">
-				<image src="/static/test/1.jpg" mode="aspectFill"></image>
-				<text>李美美</text>
-			</view>
-			<view class="speak">
-				<text>今天天气很好</text>
-				<view class="image">
-					<image src="/static/test/1.jpg" mode="heightFix"></image>
-					<image src="/static/test/1.jpg" mode="heightFix"></image>
-				</view>
-			</view>
-		</m-card>
+		<m-back-top :scrollTop="scrollTop"></m-back-top>
 	</view>
 </template>
 
@@ -39,11 +29,15 @@
 		},
 		data() {
 			return {
-
+				scrollTop:0
 			}
 		},
 		onLoad() {
 
+		},
+		//监听页面滚动
+		onPageScroll(res){
+			this.scrollTop=res.scrollTop
 		},
 		/**
 		* 计算属性
