@@ -1,4 +1,5 @@
 .hbuilderx/
+node_modules/
 
 # custom(add)
 unpackage/

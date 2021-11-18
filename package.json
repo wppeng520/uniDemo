@@ -1,0 +1,17 @@
+{
+  "name": "uniDemo",
+  "version": "1.0.0",
+  "description": "整理自己封装使用过的一些组件",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/wppengsmile/uni-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
